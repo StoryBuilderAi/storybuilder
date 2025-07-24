@@ -1,0 +1,44 @@
+node_modules
+node_modules/*
+.turbo
+.idea
+.env
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+db/migrations
+db/migrations/*
+
+
+# Native
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+logs
+
+# Metro
+.metro-health-check*
+
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
+.DS_Store
+*.pem
+
+# local env files
+.env*.local
+
+# typescript
+*.tsbuildinfo
+
+app-example

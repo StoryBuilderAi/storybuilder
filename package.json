@@ -1,0 +1,41 @@
+{
+  "name": "storybuilder",
+  "version": "1.0.0",
+  "description": "AI-powered Resume Analyzer and career coach . Includes seamless auth, upload and store resumes, and match candidates to jobs using smart AI evaluations.",
+  "keywords": [
+    "AI",
+    "Resume",
+    "Career"
+  ],
+    "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "homepage": "https://github.com/StoryBuilderAi/storybuilder#readme",
+  "bugs": {
+    "url": "https://github.com/StoryBuilderAi/storybuilder/issues"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:env": "node scripts/start.js",
+    "start:server": "npm run dev --workspace=server",
+    "start:client": "npm run dev --workspace=client",
+    "start:core": "npm run dev --workspace=core",
+    "commitlint": " commitlint --edit -c  ",
+    "commit": "commit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StoryBuilderAi/storybuilder.git"
+  },
+  "license": "ISC",
+  "author": "https://github.com/wealthralph",
+  "type": "commonjs",
+  "main": "index.js",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "husky": "^9.1.7",
+    "prettier": "^3.6.2",
+    "turbo": "^2.5.5"
+  }
+}
