@@ -7,7 +7,7 @@
     "Resume",
     "Career"
   ],
-    "private": true,
+  "private": true,
   "workspaces": [
     "apps/*"
   ],
@@ -16,13 +16,22 @@
     "url": "https://github.com/StoryBuilderAi/storybuilder/issues"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start:env": "node scripts/start.js",
-    "start:server": "npm run dev --workspace=server",
-    "start:client": "npm run dev --workspace=client",
-    "start:core": "npm run dev --workspace=core",
-    "commitlint": " commitlint --edit -c  ",
-    "commit": "commit"
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "start": "turbo run start",
+    "lint": "turbo run lint",
+    "type-check": "turbo run type-check",
+    "clean": "turbo run clean",
+    "test": "turbo run test",
+    "dev:server": "npm run dev --workspace=server",
+    "dev:web": "npm run dev --workspace=web",
+    "dev:client": "npm run dev --workspace=client",
+    "build:server": "npm run build --workspace=server",
+    "build:web": "npm run build --workspace=web",
+    "build:client": "npm run build --workspace=client",
+    "start:server": "npm run start --workspace=server",
+    "start:web": "npm run start --workspace=web",
+    "start:client": "npm run start --workspace=client"
   },
   "repository": {
     "type": "git",
@@ -36,6 +45,7 @@
     "cross-env": "^7.0.3",
     "husky": "^9.1.7",
     "prettier": "^3.6.2",
-    "turbo": "^2.5.5"
+    "turbo": "^2.5.5",
+    "winston-daily-rotate-file": "^5.0.0"
   }
 }
