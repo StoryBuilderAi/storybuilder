@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import WaitlistPage from "./pages/WaitlistPage";
@@ -36,10 +36,7 @@ function App() {
     setCurrentPage("waitlist");
   };
 
-  const navigateToHome = () => {
-    window.history.pushState({}, "", "/");
-    setCurrentPage("home");
-  };
+
 
   useEffect(() => {
     if (currentPage === "home") {
@@ -164,7 +161,7 @@ function App() {
             <h1 className="hero-element text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight">
               Build your career story
               <span className="block bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                15% faster
+                100% faster
               </span>
             </h1>
 

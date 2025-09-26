@@ -41,6 +41,7 @@
   "author": "https://github.com/wealthralph",
   "type": "commonjs",
   "main": "index.js",
+  "packageManager": "npm@10.0.0",
   "dependencies": {
     "cross-env": "^7.0.3",
     "husky": "^9.1.7",
