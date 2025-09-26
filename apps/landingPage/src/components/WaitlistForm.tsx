@@ -469,3 +469,4 @@ const WaitlistForm: React.FC<{ onClose: () => void }> = ({ onClose }) => {
 };
 
 export default WaitlistForm;
+
